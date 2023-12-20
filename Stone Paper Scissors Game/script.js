@@ -15,30 +15,33 @@ playerchoice.forEach((choice) => {
         let playerChoose = choice.getAttribute("id")
         comChoice();
 
-        if(playerChoose === "stone" && computerChoose === "paper"){
+        if(playerChoose === computerChoose){
+            resultBoard.innerText = `Game Draw, player choose ${playerChoose} and computer choose ${computerChoose}`
+
+        }else if(playerChoose === "stone" && computerChoose === "paper"){
             comScore.innerText = cScore++;
             resultBoard.innerText = `computer Win , player choose ${playerChoose} and computer choose ${computerChoose}`
-            console.log("computer Win");
-            console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
+            // console.log("computer Win");
+            // console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
 
 
         }else if(playerChoose === "paper" && computerChoose === "scissors"){
             comScore.innerText = cScore++;
             resultBoard.innerText = `computer Win , player choose ${playerChoose} and computer choose ${computerChoose}`
-            console.log("computer win")
-            console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
+            // console.log("computer win")
+            // console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
 
         }else if(playerChoose === "scissors" && computerChoose === "stone"){
             comScore.innerText = cScore++;
             resultBoard.innerText = `computer Win , player choose ${playerChoose} and computer choose ${computerChoose}`
-            console.log("computer win")
-            console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
+            // console.log("computer win")
+            // console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
 
         }else{
             playerScore.innerText = pScore++;
             resultBoard.innerText = `Player Win , player choose ${playerChoose} and computer choose ${computerChoose}`
-            console.log("player win")
-            console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
+            // console.log("player win")
+            // console.log(`player choose ${playerChoose} and computer choose ${computerChoose}`)
 
         }
         
