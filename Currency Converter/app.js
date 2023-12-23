@@ -1,0 +1,1 @@
+const BASE_URL = " https://v6.exchangerate-api.com/v6/3325dea6c199ba796e8da483/latest/USD"

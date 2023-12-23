@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="tittle">Currency Converter</h1>
+    <form class="currencyConverter">
+
+        <div class="input">
+            <input type="number" class="amount" id="amount" min="1" value="1">
+        </div>
+
+        <div class="convert">
+
+            <div class="formConvert">
+                <p class="message">Form</p>
+                <img src="" alt="">
+                <select name="formCountry" id="formCountry">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+
+            <div class="toConvert">
+                <p class="message">To</p>
+                <img src="" alt="">
+                <select name="toCountry" id="toCountry">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+            </div>
+
+        </div>
+
+        <div class="output">
+            <p class="message">1USD = 84INR</p>
+            <button class="exchangeBtn" type="button">Exchange</button>
+        </div>
+
+    </form>
+
+    
+</body>
+</html>
