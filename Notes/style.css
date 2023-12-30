@@ -206,6 +206,7 @@ body {
   border-radius: 20px;
 }
 
+
 /* ------------------------------------------------> this is for mobile viewport <---------------------------------------*/
 
 @media screen and (max-width: 360px) {
@@ -213,6 +214,8 @@ body {
     margin: 0px;
     padding: 0px;
   }
+
+
 
   body {
     height: 100%;
@@ -292,5 +295,23 @@ body {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
+  }
+
+  .addNotes button:hover {
+    color: white;
+    background-color: #dda564;
+  }
+
+  .icons:hover {
+    color: white;
+    background-color:#dda564;
+  }
+  .icons i:hover {
+    color: white;
+    background-color:#dda564;
+  }
+  .searchBox i:hover{
+    background-color: whitesmoke;
+    color: #3e187a;
   }
 }
