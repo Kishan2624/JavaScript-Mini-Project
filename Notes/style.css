@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(135deg,#9a4ecc,#3E187A);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vh;
+    align-items: center;
+    gap: 40px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+    color: whitesmoke;
+    font-size:50px ;
+    text-transform: uppercase;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox{
+    overflow: hidden;
+    background-color: #DDA564;
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #3E187A;
+    margin-bottom: 50px;
+}
+
+.searchBox input{
+    background-color: white;
+    min-width: 500px;
+    min-height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Poppins' 'sans-serif';
+}
+
+.searchBox i{
+    display: flex;
+    background-color: whitesmoke;
+    min-width: 50px;
+    min-height: 50px;
+    border-left: 2px solid #3E187A;
+    border-radius: 0px 5px 5px 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #3E187A;
+    font-family:'Poppins' 'sans-serif';    
+}
+
+.searchBox i:hover{
+    color: white;
+    background-color:#DDA564;
+    cursor: pointer;
+}
+
+.notes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height:100%;
+    gap: 20px;
+    justify-content: left;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+    gap: 5px;
+    box-shadow: 0px 0px 10px #3E187A;
+    box-sizing: border-box;
+}
+
+.writeNote{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    gap: 5px;
+
+}
+
+.note textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: 'Poppins' 'sans-serif';
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    color: #3E187A;
+}
+
+.note #title{
+    padding-top: 8px;
+    font-family: 'Poppins' 'sans-serif';
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    height: 35px;
+}
+
+.note #discription{
+    height: 80%;
+    width: 100%;
+    font-family: 'Poppins' 'sans-serif';
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #DDA564;
+    box-sizing: border-box;
+}
+
+.icons i{
+    font-size: 18px;
+    color: white;
+}
+
+.icons:hover{
+    color: #DDA564;
+    background-color: rgba(0,0,0,0.1 );
+    cursor: pointer;
+}
+.icons i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.addNotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 10px #3E187A;
+    box-sizing: border-box;
+}
+
+.addNotes button{
+    width: 100%;
+    height: 100%;
+    font-size: 200px;
+    border: none;
+    outline: none;
+    background-color: #DDA564;
+    color: white;
+    border-radius: 10px;
+}
+
+.addNotes button:hover{
+    color: #DDA564;
+    background-color: rgba(0,0,0,0.1 );
+    cursor: pointer;
+}
+
+.border-radius{
+    border: 2px solid #EFCC93;
+    border-radius: 20px;
+}
+
+
+/* ------------------------------------------------> this is for mobile viewport <---------------------------------------*/
+
+@media  screen and (max-width: 360px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .heading{
+        padding-top:20px;
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .heading img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .searchBox{
+        overflow: hidden;
+        background-color: #DDA564;
+        width: 90%;
+        height: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #3E187A;
+    }
+
+    .searchBox input{
+        background-color: white;
+        width: 80%;
+        height: 35px;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        font-size: 11px;
+        font-family: 'Poppins' 'sans-serif';
+    }
+
+    .searchBox i{
+        display: flex;
+        background-color: whitesmoke;
+        width: 20%;
+        height: 35px;
+        border-left: 2px solid #3E187A;
+        border-radius: 0px 5px 5px 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        color: #3E187A;
+        font-family:'Poppins' 'sans-serif';   
+    }
+    .searchBox i:hover{
+        color: white;
+        background-color:#DDA564;
+        cursor: pointer;
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .note{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+    .icons:hover{
+        color: #DDA564;
+        background-color: rgba(0,0,0,0.1 );
+    }
+
+    .addNotes{
+        display: flex;
+        width: 45%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+
+
+}
