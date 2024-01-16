@@ -6,15 +6,21 @@
 body {
   background-image: linear-gradient(135deg, #9a4ecc, #3e187a);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  padding: 5vh 5vh;
+  /* padding: 5vh 5vh; */
   align-items: center;
   gap: 40px;
+  justify-content: center;
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
 }
 
 .heading {
@@ -23,10 +29,19 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  text-align: center;
   gap: 10px;
   color: whitesmoke;
-  font-size: 50px;
+  font-size: 5vw;
   text-transform: uppercase;
+  width: 100vh;
+  height: auto;
+}
+
+.heading img {
+  width: 10vw;
+  height: 10vw;
+  object-fit: cover;
 }
 
 .content {
@@ -55,7 +70,7 @@ body {
 
 .searchBox input {
   background-color: white;
-  width: 500px;
+  width: 35vw;
   height: 50px;
   border-radius: 5px 0px 0px 5px;
   border: none;
@@ -92,7 +107,7 @@ body {
   width: 100%;
   height: 100%;
   gap: 20px;
-  justify-content: left;
+  justify-content: center;
 }
 
 .note {
@@ -127,7 +142,7 @@ body {
   color: #3e187a;
 }
 
-.note #title {
+.note .title {
   padding-top: 8px;
   font-family: "Poppins" "sans-serif";
   text-align: center;
@@ -136,7 +151,7 @@ body {
   height: 35px;
 }
 
-.note #discription {
+.note .discription {
   height: 80%;
   width: 100%;
   font-family: "Poppins" "sans-serif";
@@ -206,32 +221,31 @@ body {
   border-radius: 20px;
 }
 
-
 /* ------------------------------------------------> this is for mobile viewport <---------------------------------------*/
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   * {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
   }
 
-
-
   body {
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 
   .container {
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    padding: 10px 10px;
     align-items: center;
     gap: 20px;
   }
 
   .heading {
     padding-top: 20px;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     font-size: 25px;
   }
@@ -243,18 +257,19 @@ body {
   }
 
   .searchBox {
-    width: 90%;
+    width: auto;
     height: 35px;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    background-color: #3e187a;
+    background-color: transparent;
     margin: 0px;
   }
 
   .searchBox input {
     border: 5x solid black;
     font-size: 14px;
+    width: 60vw;
     color: black;
   }
 
@@ -267,18 +282,20 @@ body {
 
   .notes {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 100%;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     height: 100%;
     flex-wrap: wrap;
+    margin-bottom: 10vw;
   }
 
   .note {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 300px;
+    width: 80vw;
+    height: 30vh;
     box-sizing: border-box;
   }
 
@@ -289,12 +306,17 @@ body {
 
   .addNotes {
     display: flex;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 30vh;
     align-items: center;
+    justify-content: center;
     text-align: center;
     box-sizing: border-box;
+  }
+
+  #addNotes {
+    font-size: 40vw;
   }
 
   .addNotes button:hover {
@@ -304,13 +326,13 @@ body {
 
   .icons:hover {
     color: white;
-    background-color:#dda564;
+    background-color: #dda564;
   }
   .icons i:hover {
     color: white;
-    background-color:#dda564;
+    background-color: #dda564;
   }
-  .searchBox i:hover{
+  .searchBox i:hover {
     background-color: whitesmoke;
     color: #3e187a;
   }
