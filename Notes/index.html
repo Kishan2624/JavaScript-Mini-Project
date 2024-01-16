@@ -27,25 +27,27 @@
       </div>
       <div class="content">
         <div class="searchBox">
-          <input type="text" placeholder="Search..." id="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." id="searchInput">
+          <i class="fa-solid fa-magnifying-glass" id="searchButton"></i>
         </div>
-        <div class="notes">
-          <div class="note border-radius">
+        <di class="notes" id="allNotes">
+          <!-- <div class="note border-radius">
             <div class="writeNote">
-              <textarea name= "title"id="title" placeholder="WRITE TITLE..."></textarea>
-              <textarea name="discription" id="discription" placeholder="WRITE DISCRIPTION..."></textarea>
+              <textarea name= "title" class="title" placeholder="WRITE TITLE..."></textarea>
+              <textarea name="discription" class="discription" placeholder="WRITE DISCRIPTION..."></textarea>
             </div>
             <div class="icons">
-              <i class="fa-regular fa-pen-to-square"></i>
-              <i class="fa-solid fa-trash"></i>
+              <i class="fa-regular fa-pen-to-square edit"></i>
+              <i class="fa-solid fa-floppy-disk save"></i>
+              <i class="fa-solid fa-trash delete" ></i>
             </div>
-          </div>
+          </div> -->
           <div class="addNotes border-radius">
             <button id="addNotes">+</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
