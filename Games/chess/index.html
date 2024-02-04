@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess</title>
+</head>
+<body>
+    <div id="chessBoard" class="chessBoard"></div>
+    <div class="control">
+        <P id="playerTurn" class="text">PLAYER'S TURN</P>
+        <div class="displayScore">
+            <div class="blackScore">
+                <p id="black" class="s-text">Black Score</p>
+                <p id="blackScore" class="s-text">0</p>
+            </div>
+            <div class="whiteScore">
+                <p id="white" class="s-text">White Score</p>
+                <p id="whiteScore" class="s-text">0</p>
+            </div>
+        </div>
+        <button id="newGame" class="button">NEW GAME</button>
+        <button id="reset" class="button">RESET GAME</button>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
